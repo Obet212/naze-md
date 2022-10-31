@@ -595,7 +595,7 @@ Selama ${clockString(new Date - user.afkTime)}
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
                 user.afkReason = text
-                m.reply(`${m.pushName} *Telah Afk*${text ? ': ' + text : ''}`)
+                m.reply(`${m.pushName} *Telah Afk*${text ? '\n\nAlasan : ' + text : ''}`)
             }
             break	
         case 'ttc': case 'ttt': case 'tictactoe': {
