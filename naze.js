@@ -3713,13 +3713,11 @@ let alfamart = `628111500959@s.whatsapp.net`
   mentions: ments,
   headerType: 4,
   contextInfo:{externalAdReply:{
-  title: 'Naze Dev',
-  body: 'Subscribe My YouTube', 
+  title: 'OBET BOT',
+  body: 'Anda Senang saya tenang', 
   showAdAttribution: true,
   thumbnail: thumb,
   mediaType: 2,
-  mediaUrl: myytv,
-  sourceUrl: myyt
   }}
   }
   naze.sendMessage(m.chat, buttonMessage, {quoted: fkontak})
