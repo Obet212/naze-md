@@ -41,7 +41,7 @@ global.mess = {
     group: 'Fitur Digunakan Hanya Untuk Group!',
     private: 'Fitur Digunakan Hanya Untuk Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
-    wait: 'Loading...',
+    wait: 'Sabar sambil turu...',
     error: 'Error!',
     errapi: 'Error Mungkin Apikey Tidak Valid!',
     errmor: 'Error Kesalahan Sistem',
@@ -51,7 +51,7 @@ global.mess = {
 // Limit
 global.limitawal = {
     premium: "Infinity",
-    free: 25
+    free: 5
 }
 
 // Fake
