@@ -59,9 +59,9 @@ global.thumb = fs.readFileSync('./media/image/naze.jpg')
 global.faall = fs.readFileSync('./media/image/fake.jpg')
 
 // Url
-global.mygit = 'https://github.com/nazedev'
-global.myyt = 'https://youtube.com/c/Nazedev'
-global.myytv = 'https://youtu.be/FAsL-Jy4qLc'
+global.mygit = 'OBET'
+global.myyt = 'OBET BOT'
+global.myytv = 'OBET BOT'
 global.mygc = 'https://chat.whatsapp.com/CdSG8DATE3I3pxh79OApLT'
 
 // Engak Ngaruh, Belum Kepasang
