@@ -62,11 +62,11 @@ global.faall = fs.readFileSync('./media/image/fake.jpg')
 global.mygit = 'https://github.com/nazedev'
 global.myyt = 'https://youtube.com/c/Nazedev'
 global.myytv = 'https://youtu.be/FAsL-Jy4qLc'
-global.mygc = "https://chat.whatsapp.com/Cp1OJenk6Q9D9vgLjLU558"
+global.mygc = 'https://chat.whatsapp.com/CdSG8DATE3I3pxh79OApLT'
 
 // Engak Ngaruh, Belum Kepasang
-global.botname = 'NAZE BOT'
-global.akulaku = 'Bot By Naze'
+global.botname = 'OBET BOT'
+global.akulaku = 'Bot By OBET'
 global.ytname = 'OBET' //Kalo Ngk Punya Yt Ngak Usah Di Ganti
 
 
