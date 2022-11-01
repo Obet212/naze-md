@@ -1028,8 +1028,8 @@ break
   buttons: buttons,
   headerType: 4,
   contextInfo:{externalAdReply:{
-  title: 'Naze Dev',
-  body: 'Subscribe My YouTube', 
+  title: 'OBET',
+  body: 'Orang ganteng', 
   showAdAttribution: true,
   thumbnail: thumb,
   mediaType:2,
