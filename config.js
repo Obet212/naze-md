@@ -21,7 +21,7 @@ global.APIKeys = {
 // Other
 global.owner = ['6282313633644']
 global.ownernomer = "6282313633644"
-global.premium = ['6285875158363']
+global.premium = ['6285875158363','6285892067235']
 global.packname = 'Sticker By'
 global.author = 'OBET'
 global.sessionName = 'nazedev'  //jangan diganti bro nanti error
