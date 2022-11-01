@@ -1016,8 +1016,8 @@ break
             }
             break		 
             case 'subsyt': {
-            let jawab = `*${ucapanWaktu}*\n*Silahkan Klik Link Ini*`
-            let buttons = [{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            let jawab = `*${ucapanWaktu}*\n*Keperluan Game Kamu Silahkan Klik Tombol*`
+            let buttons = [{ buttonId: 'gffp', buttonText: { displayText: '💎 FF' }, type: 1 },{ buttonId: 'mlbb', buttonText: { displayText: '💎 MLBB' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./media/doc/fake.pptx'),
   fileName : akulaku + (` | Halo ${pushname}`),
@@ -3813,7 +3813,7 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Wit* : ${timur} WIT
 ╰──❍`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'gffp', buttonText: { displayText: 'DIAMOND FF' }, type: 1 },{ buttonId: 'mlbb', buttonText: { displayText: 'DIAMOND MLBB' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./media/doc/fake.pptx'),
   fileName : akulaku + (` | Halo ${pushname}`),
