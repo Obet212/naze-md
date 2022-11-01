@@ -864,7 +864,8 @@ naze.relayMessage(m.chat, pollCreation.message, { messageId: pollCreation.key.id
 break
             
 //Pembatas FUN===============================================
-            case 'slot': {
+            case 'slot': {  
+            	if (!isPremium) throw mess.premime
             const somtoy = sotoy[Math.floor(Math.random() * sotoy.length)]
             let sloth =`[  🎰VIRTUAL SLOT 🎰  ]\n------------------------\n\n🍒 : 🍌 : 🍇\n${somtoy}<=====\n🍇 : 🍌 : 🍒\n\n------------------------\n[  🎰 VIRTUAL SLOT 🎰  ]\n\n*Keterangan* :\n_Jika Mendapatkan 3Buah Sama_\n_Berarti Kamu Win_\n\n_Contoh : 🍒 : 🍒 : 🍒_ <=====`
             naze.sendMessage(m.chat, { text: jawab }, {quoted: m})
@@ -1011,7 +1012,7 @@ break
             }
             break
             case 'sc': {
-                m.reply('https://wa.me/6285875158363')
+                m.reply('https://wa.me/6282313633644')
             }
             break		 
             case 'subsyt': {
