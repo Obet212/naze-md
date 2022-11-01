@@ -1153,7 +1153,7 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await naze.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		await naze.groupParticipantsUpdate(m.chat, [users], 'promote')
 	}
 	break
 	case 'demote': {
@@ -1161,7 +1161,7 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await naze.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		await naze.groupParticipantsUpdate(m.chat, [users], 'demote')
 	}
 	break
         case 'block': {
