@@ -2592,17 +2592,36 @@ break
                 naze.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'waifu': {
-            	tesk = `*${ucapanWaktu} Kak ${pushname}*\n*Silahkan Pilih Dibawah Ini*\n\n_Dosa Tanggung Sendiri :v_`
-            	let buttons = [{buttonId: `menu`, buttonText: {displayText: '📚MENU'}, type: 1},{buttonId: `sfw`, buttonText: {displayText: '✅SFW'}, type: 1}]
-                await naze.sendButtonText(m.chat, buttons, tesk, nyoutube, m, {quoted: fkontak})
-            	}
-            break
-            case 'sfw': {
-            	m.reply(mess.wait)
+            case 'waifu': { 
                 anu = await fetchJson(`https://waifu.pics/api/sfw/waifu`)
                 buffer = await getBuffer(anu.url)
-                naze.sendMessage(m.chat, { image: buffer, caption: `Random Waifu`, footer: nyoutube}, { quoted: m })
+                let buttons = [{buttonId: `waifu`, buttonText: {displayText: 'Next Image'}, type: 1},{buttonId: `simplemenu`, buttonText: {displayText: '⬅️Back'}, type: 1},{buttonId: `waifuxyz`, buttonText: {displayText: 'Waifu 🔞🔒'}, type: 1}]
+                let buttonMessage = {
+                    image: buffer,
+                    fileLength: jumlah,
+                    caption: `Random Waifu`,
+                    footer: nyoutube,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                naze.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+            case 'waifuxyz': {   
+            	if (!isPremium) throw mess.premime
+                if (m.isGroup) return m.reply('Private chat aja, dosa jangan dibagi-bagi!')
+                anu = await fetchJson(`https://waifu.pics/api/nsfw/waifu`)
+                buffer = await getBuffer(anu.url)
+                let buttons = [{buttonId: `waifuxyz`, buttonText: {displayText: 'Next Image🔞'}, type: 1},{buttonId: `simplemenu`, buttonText: {displayText: '⬅️Back'}, type: 1}]
+                let buttonMessage = {
+                    image: buffer,
+                    fileLength: jumlah,
+                    caption: `Random Waifu`,
+                    footer: nyoutube,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                naze.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
 	    case 'couple': {
