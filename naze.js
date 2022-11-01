@@ -3639,6 +3639,99 @@ let capt = `⭔ Title: ${judul}
             break
 
 //PEMBATAS Menu=======================================
+            case 'gffp': {
+               ffaudio = fs.readFileSync('./sound/diamondff.mp3')
+naze.sendMessage(m.chat, {audio: ffaudio, mimetype:'audio/mpeg', ptt:true }, {quoted:m})}
+{
+gffp = `List harga : FreeFire
+
+HARGA DIBAWAH BELUM TERMASUK BIAYA LAYANAN RP 2500 
+
+HUBUNGI OWNER
+wa.me/6282313633644
+
+GFF0=0 -> Cek ID Freefire
+GFF5=820 -> 5 Diamond FreeFire
+GFF10=1.670 -> 10 Diamond FreeFire
+GFF12=1.900 -> 12 Diamond FreeFire
+GFF20=2.775 -> 20 Diamond FreeFire
+GFF25=3.575 -> 25 Diamond FreeFire
+GFF30=4.399 -> 30 Diamond FreeFire
+GFF40=5.465 -> 40 Diamond FreeFire
+GFF50=6.556 -> 50 Diamond FreeFire
+GFF55=7.434 -> 55 Diamond FreeFire
+GFF70=9.025 -> 70 Diamond FreeFire
+GFF75=9.920 -> 75 Diamond FreeFire
+GFF80=10.596 -> 80 Diamond FreeFire
+GFF90=11.687 -> 90 Diamond FreeFire
+GFF100=12.983 -> 100 Diamond FreeFire
+GFF120=15.486 -> 120 Diamond FreeFire
+GFF140=17.975 -> 140 Diamond FreeFire
+GFF145=19.129 -> 145 Diamond FreeFire
+GFF150=19.509 -> 150 Diamond FreeFire
+GFF160=20.632 -> 160 Diamond FreeFire
+GFF190=24.386 -> 190 Diamond FreeFire
+GFF200=26.145 -> 200 Diamond FreeFire
+GFF210=26.900 -> 210 Diamond FreeFire
+GFF280=35.930 -> 280 Diamond FreeFire
+GFF355=45.075 -> 355 Diamond FreeFire
+GFF375=47.508 -> 375 Diamond FreeFire
+GFF400=50.473 -> 400 Diamond FreeFire
+GFF405=50.933 -> 405 Diamond FreeFire
+GFF425=53.071 -> 425 Diamond FreeFire
+GFF475=59.590 -> 475 Diamond FreeFire
+GFF500=63.709 -> 500 Diamond FreeFire
+GFF510=65.345 -> 510 Diamond FreeFire
+GFF545=68.709 -> 545 Diamond FreeFire
+GFF565=71.160 -> 565 Diamond FreeFire
+GFF635=79.705 -> 635 Diamond FreeFire
+GFF720=90.300 -> 720 Diamond FreeFire
+GFF770=96.046 -> 770 Diamond FreeFire
+GFF790=98.405 -> 790 Diamond FreeFire
+
+ -- [K] Kosong ; [G] Gangguan --`
+let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'mlbb', buttonText: { displayText: 'DIAMOND MLBB' }, type: 1 }]
+            await naze.sendButtonText(m.chat, buttons, gffp, nyoutube, m, {quoted: fkontak})
+            }
+            break
+            case 'mlbb': {
+               ffaudio = fs.readFileSync('./sound/diamondmlbb.mp3')
+naze.sendMessage(m.chat, {audio: ffaudio, mimetype:'audio/mpeg', ptt:true }, {quoted:m})}
+{
+mlbb = `List harga : Mobile Lejend
+
+HARGA DIBAWAH BELUM TERMASUK BIAYA LAYANAN RP 2500 
+
+HUBUNGI OWNER
+wa.me/6282313633644
+
+3.580 -> 12 Diamond
+5.745 -> 19 Diamond
+6.850 -> 28 Diamond
+9.985 -> 25+5 bonus Diamond
+10.275 -> 36 Diamond
+12.300 -> 44 Diamond
+16.300 -> 59 Diamond
+19.050 -> 72+2 bonus Diamond
+20.040 -> 77+8 bonus Diamond
+20.140 -> 78+8 bonus Diamond
+28.150 -> 102+10 bonus Diamond
+39.650 -> 156+16 bonus Diamond
+39.750 -> 172 Diamond
+45.850 -> 167+18 bonus Diamond
+56.050 -> 202+20 bonus Diamond
+58.650 -> 220+20 bonus Diamond
+58.550 -> 234+23 bonus Diamond
+79.950 -> 256+40 bonus Diamond
+79.905 -> 312+32 bonus Diamond
+90.450 -> 336+36 bonus Diamond
+98.060 -> 390+29 bonus Diamond
+
+ -- [K] Kosong ; [G] Gangguan --`
+let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'gffp', buttonText: { displayText: 'DIAMOND FF' }, type: 1 }]
+            await naze.sendButtonText(m.chat, buttons, mlbb, nyoutube, m, {quoted: fkontak})
+            }
+            break
             case 'rules': {
 rules = `╭──❍ *Rules BOT*
 │
