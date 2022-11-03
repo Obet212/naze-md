@@ -873,6 +873,7 @@ break
             break
             case 'jodohku': {
             if (!m.isGroup) throw mess.group
+            if (!isPremium) throw mess.premime
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
@@ -888,6 +889,7 @@ break
             break
             case 'jadian': {
             if (!m.isGroup) throw mess.group
+            if (!isPremium) throw mess.premime
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
