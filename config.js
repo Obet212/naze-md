@@ -26,8 +26,8 @@ global.packname = 'Sticker By'
 global.author = 'OBET'
 global.sessionName = 'nazedev'  //jangan diganti bro nanti error
 global.jumlha = '999'
-global.jumhal = '100000000000000'
-global.jumlah = '1000000000'
+global.jumhal = '1'
+global.jumlah = '1'
 global.prefa = ['/','!','.','#','&']
 global.sp = ''
 
