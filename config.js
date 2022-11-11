@@ -21,13 +21,13 @@ global.APIKeys = {
 // Other
 global.owner = ['6282313633644']
 global.ownernomer = "6282313633644"
-global.premium = ['6285875158363']
+global.premium = ['6285875158363','6283825121591']
 global.packname = 'Sticker By'
 global.author = 'OBET'
 global.sessionName = 'nazedev'  //jangan diganti bro nanti error
 global.jumlha = '999'
-global.jumhal = '1000'
-global.jumlah = '1000'
+global.jumhal = '1000000000000'
+global.jumlah = '1000000000000'
 global.prefa = ['/','!','.','#','&']
 global.sp = ''
 
