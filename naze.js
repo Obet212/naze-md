@@ -202,7 +202,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
             naze.readMessages([m.key])
         }
         
-        if (m.text.includes('🗿')) {
+        if (m.text.includes('🗿','😂','🙏','👍','🤔','🙃','🙂')) {
     naze.sendMessage(m.chat, {
           react: {
             text: '🗿',
