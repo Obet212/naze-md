@@ -237,9 +237,6 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
         if (m.text.includes('🤒')) {naze.sendMessage(m.chat, {react: { text: '🤒', key: m.key}})}
         if (m.text.includes('😎')) {naze.sendMessage(m.chat, {react: { text: '😎', key: m.key}})}
         
-        if (isCmd) {naze.setStatus(`${naze.user.name} | Runtime : ${runtime(process.uptime())} | Last Chat : ${m.pushName} `)
-        }
-        
  
 //Premium Exp
 prem.expiredCheck(naze, m, premium);
