@@ -55,7 +55,7 @@ global.prem = require("./lib/premium")
 gambar = fs.readFileSync('./media/image/naze.jpg')
 
 //TIME
-const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
+const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
 var ucapanWaktu = 'Selamat Malam 🌌'
  }
@@ -176,14 +176,14 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = false	
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -202,14 +202,45 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
             naze.readMessages([m.key])
         }
         
-        if (m.text.includes('🗿','😂','🙏','👍','🤔','🙃','🙂')) {
+        if (m.text.includes('🗿')) {
     naze.sendMessage(m.chat, {
           react: {
             text: '🗿',
             key: m.key
           }})
         }
-                
+        
+        if (m.text.includes('🙃')) {naze.sendMessage(m.chat, {react: { text: '🙃', key: m.key}})}
+        if (m.text.includes('❤️')) {naze.sendMessage(m.chat, {react: { text: '❤️', key: m.key}})}
+        if (m.text.includes('👍')) {naze.sendMessage(m.chat, {react: { text: '👍', key: m.key}})}
+        if (m.text.includes('😭')) {naze.sendMessage(m.chat, {react: { text: '😭', key: m.key}})}
+        if (m.text.includes('🤔')) {naze.sendMessage(m.chat, {react: { text: '🤔', key: m.key}})}
+        if (m.text.includes('🙏')) {naze.sendMessage(m.chat, {react: { text: '🙏', key: m.key}})}
+        if (m.text.includes('😂')) {naze.sendMessage(m.chat, {react: { text: '😂', key: m.key}})}
+        if (m.text.includes('😘')) {naze.sendMessage(m.chat, {react: { text: '😘', key: m.key}})}
+        if (m.text.includes('🥰')) {naze.sendMessage(m.chat, {react: { text: '🥰', key: m.key}})}
+        if (m.text.includes('🤭')) {naze.sendMessage(m.chat, {react: { text: '🤭', key: m.key}})}
+        if (m.text.includes('😢')) {naze.sendMessage(m.chat, {react: { text: '😢', key: m.key}})}
+        if (m.text.includes('😌')) {naze.sendMessage(m.chat, {react: { text: '😌', key: m.key}})}
+        if (m.text.includes('🤣')) {naze.sendMessage(m.chat, {react: { text: '🤣', key: m.key}})}
+        if (m.text.includes('🙂')) {naze.sendMessage(m.chat, {react: { text: '🙂', key: m.key}})}
+        if (m.text.includes('😑')) {naze.sendMessage(m.chat, {react: { text: '😑', key: m.key}})}
+        if (m.text.includes('😇')) {naze.sendMessage(m.chat, {react: { text: '😇', key: m.key}})}
+        if (m.text.includes('🥲')) {naze.sendMessage(m.chat, {react: { text: '🥲', key: m.key}})}
+        if (m.text.includes('😡')) {naze.sendMessage(m.chat, {react: { text: '😡', key: m.key}})}
+        if (m.text.includes('🤬')) {naze.sendMessage(m.chat, {react: { text: '🤬', key: m.key}})}
+        if (m.text.includes('😤')) {naze.sendMessage(m.chat, {react: { text: '😤', key: m.key}})}
+        if (m.text.includes('😱')) {naze.sendMessage(m.chat, {react: { text: '😱', key: m.key}})}
+        if (m.text.includes('🤤')) {naze.sendMessage(m.chat, {react: { text: '🤤', key: m.key}})}
+        if (m.text.includes('🤮')) {naze.sendMessage(m.chat, {react: { text: '🤮', key: m.key}})}
+        if (m.text.includes('🤧')) {naze.sendMessage(m.chat, {react: { text: '🤧', key: m.key}})}
+        if (m.text.includes('🤒')) {naze.sendMessage(m.chat, {react: { text: '🤒', key: m.key}})}
+        if (m.text.includes('😎')) {naze.sendMessage(m.chat, {react: { text: '😎', key: m.key}})}
+        
+        if (isCmd) {naze.setStatus(`${naze.user.name} | Runtime : ${runtime(process.uptime())} | Last Chat : ${m.pushName} `)
+        }
+        
+ 
 //Premium Exp
 prem.expiredCheck(naze, m, premium);
                 
@@ -1054,7 +1085,6 @@ break
             case 'runtime': case 'tes': {
             	let lowq = `*Bot Telah Online Selama*\n*${runtime(process.uptime())}*`
                 naze.sendMessage(m.chat, { text: lowq }, {quoted: fkontak})
-                naze.setStatus(`${naze.user.name} | Runtime : ${runtime(process.uptime())}`)
             	}
             break
             case 'req': case 'request': {
@@ -2807,7 +2837,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
              if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
              let anu = await maker.textpro(link, q)
-             naze.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname},For my Darling ` }, { quoted: m })
+             naze.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}, Untukmu ${m.pushName}` }, { quoted: m })
              }
              break
              case 'glitch2': case 'harrypot': case 'graffiti': case 'pornhub': case 'glitch3': case '3dspace': case 'lion': case 'wolf': case 'retro': case '8bit': {
@@ -2827,7 +2857,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
              if (/retro/.test(command)) link = 'https://textpro.me/create-3d-retro-text-effect-online-free-1065.html'
              if (/8bit/.test(command)) link = 'https://textpro.me/video-game-classic-8-bit-text-effect-1037.html'
              let anu = await maker.textpro(link, [`${teks1}`,`${teks2}`])
-             naze.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname},For my Darling ` }, { quoted: m })
+             naze.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}, Untukmu ${m.pushName}` }, { quoted: m })
              }
              break
             
